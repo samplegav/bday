@@ -1,0 +1,141 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roboto Slab', serif;
+    color: #FFF3B0;
+}
+
+body{
+    background: #0c192c;
+}
+
+.bubbles{
+    position: fixed;
+    display: flex;
+    z-index: -100;
+}
+
+.bubbles span{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #4fc3dc;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44, 
+    0 0 50px #4fc3dc,
+    0 0 100px #4fc3dc;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+}
+
+.bubbles span:nth-child(even){
+    background: #ff2d75;
+    box-shadow: 0 0 0 10px #ff2d7544, 
+    0 0 50px #ff2d75,
+    0 0 100px #ff2d75;
+}
+
+@keyframes animate {
+    0%{
+        transform: translateY(100vh) scale(0);
+    }
+
+    100%{
+        transform: translateY(-10vh) scale(1);
+    }
+}
+
+.heading{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 150px;
+    padding-right: 150px;
+    text-shadow: 0 0 10px #E9EB87,
+    0 0 40px #e9eb87d4;
+}
+
+.desc{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    width: 80%;
+    padding: 30px;
+    border-radius: 4px;
+}
+
+form input{
+    height: 40px;
+    width: 80%;
+    border-radius: 4px;
+    padding-left: 8px ;
+    margin-right: 50px;
+    border: 0;
+    background-color: #9E2A2B;
+    color: #FFF3B0;
+}
+
+button{
+    height: 40px;
+    width: 10%;
+    font-size: 20px;
+    align-items: center;
+    background-color: #9E2A2B;
+    color: #FFF3B0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: 2s;
+    border: 0;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+#result{
+    text-align: center;
+    padding-bottom: 40px;
+    padding-left: 150px;
+    padding-right: 150px;
+    text-shadow: 0 0 10px #E9EB87,
+    0 0 40px #e9eb87d4;
+}
+
+a{
+    height: 60px;
+    width: 500px;
+    font-size: 20px;
+    align-items: center;
+    background-color: #9E2A2B;
+    color: #FFF3B0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 180px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: 2s;
+}
+
+a h6{
+    margin-left: 10px;
+}

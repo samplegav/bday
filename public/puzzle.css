@@ -1,0 +1,92 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+body{
+    background-color: #102542;
+}
+
+.puzzle-head{
+    background: #102542;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 120px;
+    padding-left: 180px;
+    padding-right: 180px;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+
+#particles-js{
+    position: relative;
+    height: 100vh;
+    background: #fff;
+    mix-blend-mode: screen;
+}
+
+button{
+    height: 40px;
+    width: 230px;
+    font-size: 20px;
+    align-items: center;
+    background-color: #9E2A2B;
+    color: #FFF3B0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: 2s;
+    border: 0;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+form{
+    display: flex;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center ;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    width: 700px;
+    padding: 30px;
+    border-radius: 4px;
+}
+
+form input{
+    height: 40px;
+    border-radius: 4px;
+    padding-left: 8px ;
+    margin-right: 50px;
+    border: 0;
+    background-color: #9E2A2B;
+    color: #FFF3B0;
+}
+
+#failed{
+    color: #FFF3B0;
+    margin-left: 15px;
+    color: red;
+}
